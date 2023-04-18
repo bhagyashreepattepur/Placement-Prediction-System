@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        title {
+            font-size: larger;
+            align-content: center;
+
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement prediction page form</title>
+    <style>
+        body {
+            background: linear-gradient(white, yellow) no-repeat;
+            height: 700px;
+            transform: translate(10%, 10%);
+            ;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#eec9d2 ">
+    <form method="post">
+        {% csrf_token %}
+        <h2>Placement pridiction ..... Enter your details here</h2>
+        <table align="center" cellspacing="10" cellpadding="10">
+            <tr>
+                <td> Enter CGPA: :
+                <td>
+                    <input type="text" name="CGPA" placeholder="Enter your CGPA" required>
+                </td>
+            </tr>
+            <tr>
+                <td> Enter the 10th score(Out of 100) :
+                <td>
+                    <input type="text" name="Tenth" placeholder="Enter your score" required>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td> Enter 12th score(Out of 100):
+                <td>
+                    <input type="text" name="Twelth" placeholder="Enter your score" required>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td> Enter AMCAT score(Out of 100):
+                <td>
+                    <input type="text" name="AMCAT" placeholder="Enter your score" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit" name="" bgcolor="blue">
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+    Result:{{result}}
+</body>
+
+</html>

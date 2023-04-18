@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <h1><b> <u> PLACEMENT PRIDICTION  </u> </b> </h1>
+    <style>
+        body {
+      background:linear-gradient(white,yellow)  no-repeat;
+        height: 700px;
+        }
+        h1{
+            color:blue;
+            text-align:center;
+            text-orientation: unset;
+            text-shadow: rgb(110, 68, 6) ;
+            font-style: oblique ;
+            background-color: bisque;
+        }
+    
+        p{
+        font-weight:900;
+       
+        font-size:larger;
+       }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'csss/style.css' %}">
+    <title> home page </title>
+</head>
+<body bgcolor="#EEB462">
+    
+   
+        <h2>
+       Welcome
+    </h2>
+    <table>
+        <td>
+            
+                <th width="20%" font color="red" size="7%"><img src=" {% static 'img/register.jpeg' %}" width="300" height="200"></th>
+                <th width="20%" font color="red" size="7%"><img src=" {% static 'img/micah-williams-lmFJOx7hPc4-unsplash.jpg' %}" width="300" height="200"></th>
+            
+        </td>
+        <tr>
+        <td>
+            <th width="20%" font color="red" size="7%"><a href="register">REGISTER</a></th>
+        <th width="20%" font color="red" size="7%"><a href="login">LOGIN</a></th>
+       </td>
+       </tr>
+        </td>
+    </table>
+</body>
+</html>

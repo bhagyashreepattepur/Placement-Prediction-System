@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        title {
+            font-size: larger;
+            align-content: center;
+
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background: linear-gradient(white, yellow) no-repeat;
+            height: 700px;
+            transform: translate(20%, 20%);
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#eec9d2 ">
+    <form method="post">
+        {% csrf_token %}
+        <h2>Register here </h2>
+        <table width="20%" height="50%" border="2" cellspacing="8" cellpadding="8">
+            <tr>
+                <td> uname : </td>
+                <td>`0
+                    <input type="text" name="usrname" placeholder="Enter your name" required>
+                </td>
+            </tr>
+            <tr>
+                <td> password : </td>
+                <td>
+                    <input type="text" name="password" placeholder="Enter your Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td> DOB: </td>
+                <td>
+                    <input type="date" name="DOB" placeholder="Enter your DOB" required>
+                </td>
+            </tr>
+            <tr>
+                <td>gender : </td>
+                <td>
+                    <input type="radio" name="gender"> male
+                    <input type="radio" name="gender"> female
+                </td>
+            </tr>
+            <tr>
+                <td> phone : </td>
+                <td>
+                    <select>
+                        <option> 91</option>
+                        <option> 94</option>
+                        <option> 97</option>
+                        <option> 98</option>
+                    </select>
+                    <input type="number" name="phone" placeholder="Enter your ph.no" required>
+                </td>
+            </tr>
+            <tr>
+                <td> place : </td>
+                <td>
+                    <input type="text" name="place" placeholder="Enter your Place" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit" name="" bgcolor="blue">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
